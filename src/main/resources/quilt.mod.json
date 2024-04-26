@@ -1,0 +1,37 @@
+{
+    "schema_version": 1,
+    "quilt_loader": {
+        "group": "${group}",
+        "id": "e_gems",
+        "version": "${version}",
+        "metadata": {
+            "name": "Extra Gems",
+            "description": "More Gems More Fun!",
+            "contributors": {
+                "Daemon": "Owner"
+            },
+            "contact": {},
+            "icon": "assets/example_mod/icon.png",
+            "license": "MIT"
+        },
+        "intermediate_mappings": "net.fabricmc:intermediary",
+        "entrypoints": {
+            "init": "dev.quiltusers.daemon.e_gems.EGems"
+        },
+        "depends": [
+            {
+                "id": "quilt_loader",
+                "versions": ">=0.19.1"
+            },
+            {
+                "id": "quilted_fabric_api",
+                "versions": ">=7.0.2"
+            },
+            {
+                "id": "minecraft",
+                "versions": ">=1.20"
+            }
+        ]
+    },
+    "mixin": "e_gems.mixins.json"
+}

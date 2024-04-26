@@ -1,2 +1,1 @@
-# Extra-Gems
-More Gems More Fun!
+# Extra Gems
