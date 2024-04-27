@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.daemon.extragems.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"ExtraGemsClientMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

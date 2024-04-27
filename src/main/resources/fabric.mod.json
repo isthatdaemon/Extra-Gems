@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "extragems",
+	"version": "${version}",
+	"name": "Extra Gems",
+	"description": "More Gems More Fun!",
+	"authors": [
+		"DAEMON the GHOUL"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/extragems/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.daemon.extragems.ExtraGems"
+		],
+		"client": [
+          "com.daemon.extragems.ExtraGemsModClient"
+		]
+	},
+	"mixins": [
+		"extragems.mixins.json",
+		{
+			"config": "extragems.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
